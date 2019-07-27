@@ -1,3 +1,26 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+
+my_pigeon_data = {}
+
+data.each do |category, info|
+  info. each do |attribute, name|
+    name.each do |n|
+      my_pigeon_data[n] = {:color => [], :gender => [], :lives => []}
+    end
+  end
+end
+
+q = my_pigeon_data.keys
+
+data[:color].each do |bird_color, name|
+  name.each do |bird_name|
+    q.each do |item|
+      if bird_name === item
+        my_pigeon_data[item][:color] << bird_color.to_s
+      end
+    end
+  end
+end
+
+return my_pigeon_data
 end
