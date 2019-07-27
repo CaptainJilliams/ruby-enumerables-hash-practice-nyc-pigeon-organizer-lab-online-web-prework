@@ -22,8 +22,8 @@ data[:color].each do |bird_color, name|
   end
 end
 
-data[:gender].each do |bird_gender, name|
-  name.each do |bird_name|
+data[:gender].each do |bird_gender, type|
+  type.each do |bird_name|
     q.each do |item|
       if bird_gender === item
         my_pigeon_data[item][:gender] << bird_gender.to_s
