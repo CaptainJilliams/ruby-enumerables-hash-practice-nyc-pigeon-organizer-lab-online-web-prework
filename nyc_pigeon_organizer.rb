@@ -25,14 +25,17 @@ end
 data[:gender].each do |bird_gender, type|
   type.each do |bird_name|
     q.each do |item|
-      if bird_gender === item
+      if bird_name === item
         my_pigeon_data[item][:gender] << bird_gender.to_s
       end
     end
   end
 end
 
-
+data[:lives].each do |bird_location, name|
+  name.each do |bird_name|
+    q.each do |item|
+      if bir
 
 return my_pigeon_data
 end
