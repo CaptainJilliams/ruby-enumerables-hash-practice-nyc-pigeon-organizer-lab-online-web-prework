@@ -35,7 +35,12 @@ end
 data[:lives].each do |bird_location, name|
   name.each do |bird_name|
     q.each do |item|
-      if bir
+      if bird_name === item 
+        my_pigeon_data[item][:lives] << bird_location
+      end
+    end
+  end
+end
 
 return my_pigeon_data
 end
